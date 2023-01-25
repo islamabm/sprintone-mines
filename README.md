@@ -1,0 +1,2 @@
+# sprintone-mines
+mines game
