@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>sprint one</title>
+  </head>
+  <body onload="onChangeLevel(4)">
+    <h1>loah maksheem game</h1>
+    <div class="timer"><span class="timer">0.000</span><span>s</span></div>
+    <br />
+    <div>
+      <button class="level-btn" onclick="onChangeLevel(4)">Beginner</button>
+      <button class="level-btn" onclick="onChangeLevel(8)">Medium</button>
+      <button class="level-btn" onclick="onChangeLevel(12)">Expert</button>
+    </div>
+    <h3 class="chance live" onclick="onBombed(this)">
+      <span>❤️❤️❤️</span>
+    </h3>
+    <h3 class="hint" onclick="onHintClick(this)">🔑🔑🔑</h3>
+
+    <table>
+      <tbody class="board"></tbody>
+    </table>
+
+    <div class="modal">
+      <h2 class="user-msg">you bombed 🤣😜!</h2>
+      <button class="restart-btn" onclick="onRestart(this)">restart</button>
+    </div>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
